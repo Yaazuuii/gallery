@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(to bottom, rgb(8, 8, 89), black);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav h1{
+    font-size: 60px;
+    font-family: Copperplate, Papyrus, fantasy;
+    background-image: linear-gradient( to right, yellow  , green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite;
+    user-select: none;
+}
+
+
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    box-shadow: 7px 7px 7px 0px black;
+    border-radius: 20px;
+  }
+
+  .card img{
+    object-fit: cover;
+    user-select: none;
+  }
+
+  .card:hover{
+    cursor:pointer;
+    transition: 0.2s;
+    width: 310px;
+    height: 310px;
+    margin-top: -20px;
+    box-shadow: 10px 10px 10px 0px black;
+  }
+
+  img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+  }
+  img:hover{
+    width: 310px;
+    height: 310px;
+  }
+
+  .full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+  }
+  
+  .full-img img{
+    width: 100%;
+    max-width: 800px;
+    object-fit: cover;
+    border-radius: 0px;
+    height: auto;
+    user-select: none;
+  }
+
+
+  .full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+  span:hover{
+    animation: rotate 0.5s;
+    user-select: none;
+  }
+
+  
+
+
+
+@keyframes animate {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav>
+      <h1>Gaming Image Gallery</h1>
+    </nav>
+    <div class="container">
+      <div class="full-img" id="fullImgBox">
+        <img src="Images/Red Dead Redemption 2/img2.jpeg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+      </div>
+
+      <div class="card-container">
+        <div class="card"><img src="Images/Devour/img1.jpg" onclick="openFullImg(this.src)"></div>
+        <div class="card"><img src="Images/Sea Of Thieves/img1.jpg" onclick="openFullImg(this.src)" ></div>
+        <div class="card"><img src="Images/Sea Of Thieves/img2.jpg" onclick="openFullImg(this.src)"></div>
+        <div class="card"><img src="Images/Devour/img2.jpg" onclick="openFullImg(this.src)"></div>
+        <div class="card"><img src="Images/Breath Of The Wild/img1.jpeg" onclick="openFullImg(this.src)"></div>
+        <div class="card"><img src="Images/Breath Of The Wild/img2.jpeg" onclick="openFullImg(this.src)"></div>
+        <div class="card"><img src="Images/Red Dead Redemption 2/img1.jpeg" onclick="openFullImg(this.src)"></div>
+        <div class="card"><img src="Images/Red Dead Redemption 2/img2.jpeg" onclick="openFullImg(this.src)"></div>
+      </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
